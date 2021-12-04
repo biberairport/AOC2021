@@ -92,8 +92,6 @@ int main()
     ifstream        myFile      ("day4_data.txt");
     string          buffer      = "";    
     int             lines       = 0;
-    int             horizon     = 0;
-    int             vertica     = 0;
     int             currentPaper = 0;
        
 
