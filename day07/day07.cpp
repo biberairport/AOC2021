@@ -23,8 +23,7 @@ int main() {
     string s = "";
     vector <int> crabs;
     vector <int> result;
-    vector <int> result_max;
-    vector <int> value;
+    vector <int> result_max;    
 
     ss << myFile.rdbuf();                                                   // read ifstream to stringsteam
 
@@ -42,8 +41,7 @@ int main() {
             tempvalmax += power_used(abs(crabs[i] - a));
         }
         result.push_back(tempvalue);     
-        result_max.push_back(tempvalmax);
-        value.push_back(a);
+        result_max.push_back(tempvalmax);        
     }
 
     cout << "\n Result 1: " << min_element(begin(result), end(result))[0];
