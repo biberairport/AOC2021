@@ -18,8 +18,6 @@ int power_used(int i)
 }
 
 int main() {
-
-
     ifstream myFile("data_day7.txt");                                         
     stringstream ss;
     string s = "";
