@@ -39,8 +39,7 @@ int main() {
     for (int a = min_e[0]; a <= max_e[0]; a++) {                            // from min position to max position
         int tempvalue = 0;
         int tempvalmax = 0;
-        for (int i = 0; i < crabs.size(); i++) {                            // all crabs
-                        
+        for (int i = 0; i < crabs.size(); i++) {                            // all crabs                        
             tempvalue += abs(crabs[i] - a);                                  
             tempvalmax += power_used(abs(crabs[i] - a));
         }
