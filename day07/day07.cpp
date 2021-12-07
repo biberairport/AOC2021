@@ -35,8 +35,6 @@ int main() {
 
     auto max_e = max_element(begin(crabs),end(crabs));
     auto min_e = min_element(begin(crabs),end(crabs));
-    cout << max_e[0];
-    cout << "\n" << min_e[0];
 
     for (int a = min_e[0]; a <= max_e[0]; a++) {                            // from min position to max position
         int tempvalue = 0;
