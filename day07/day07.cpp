@@ -54,8 +54,6 @@ int main() {
     for (int a = 0; a < result.size(); a++)
         cout << "\n" << result[a] << " " << value[a];
 
-    auto res = min_element(begin(result), end(result));
-    auto res2 = min_element(begin(result_max), end(result_max));
-    cout << "\n Result 1: " << res[0];
-    cout << "\n Result 2: " << res2[0];
+    cout << "\n Result 1: " << min_element(begin(result), end(result))[0];
+    cout << "\n Result 2: " << min_element(begin(result_max), end(result_max))[0];
 }
