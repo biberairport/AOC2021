@@ -25,8 +25,6 @@ int main()
 	x++;
     }
 
-
-
     for(int a=0; a<x; a++){
 	    for (int i = 0; i<12; i++){
 	        if(vdata[a][i] == '1'){
@@ -36,10 +34,9 @@ int main()
 	    }
     }
 
-
-   int helper = 11;
-   for(int b = 0; b < 12; b++)
-   {
+    int helper = 11;
+    for(int b = 0; b < 12; b++)
+    {
         if(ti[b] > x/2){
             ti[b] = 1;}
        
@@ -48,7 +45,7 @@ int main()
 
         res1 += ti[b]*pow(2,helper);
         helper--;
-   }
+    }
 
     helper = 11;
     for(int b = 0; b < 12; b++)
@@ -60,7 +57,7 @@ int main()
 
         res2 += ta[b]*pow(2,helper);
         helper--;
-   }
+    }
 
     int g=0;
     for(int g; g<x; g++)
@@ -70,7 +67,6 @@ int main()
             xdata.push_back(vdata[g]);
         }
     }
-
 
     g=0;
     for(int g; g<x; g++)
@@ -82,11 +78,10 @@ int main()
 	    }
     }
 
-
     int res3 = 0;
     int res4 = 0;
-
     helper = 11;
+
     for(int b = 0; b < 12; b++)
     {
         res3 += xdata[0][b]*pow(2,helper);
