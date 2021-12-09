@@ -2,7 +2,6 @@
 #include <fstream>
 #include <vector>
 #include <sstream>
-#include <numeric>
 #include <algorithm>
 
 using namespace std;
@@ -50,8 +49,8 @@ int Aufgabe1(vector<string> map, vector<int>& coordY, vector<int>& coordX)
 int crawler(vector<string>& map, int startposY, int startposX, int & flood)
 {    
     map[startposY][startposX] = 'A';
-    flood += 1;
-    
+    flood += 1;  
+
     if (map[startposY + 1][startposX] != '9' && map[startposY + 1][startposX] != 'A')
         crawler(map, startposY + 1, startposX, flood);    
     if (map[startposY][startposX+1] != '9' && map[startposY][startposX+1] != 'A')
