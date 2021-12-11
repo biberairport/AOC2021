@@ -11,6 +11,7 @@ void getInput(vector<vector<int>>& map, vector<vector<int>>& flashed, string fil
     vector <int> v1;
 
     map.clear();
+    flashed.clear();
 
     while (myFile >> s) {
         for (auto w : s)
@@ -90,12 +91,10 @@ int main()
 {
     vector<vector<int>> map;
     vector<vector<int>> flashed;
-    int result = 0;
-    int result2 = 0;
-
-    getInput(map, flashed, "data_day11.txt");
-         
+             
     // Q1:
+    int result = 0;
+    getInput(map, flashed, "data_day11.txt");
     for (int i = 0; i < 100; i++) {                
         incMap(map, flashed);
         checkMap(map, flashed, result);
@@ -103,6 +102,7 @@ int main()
     cout << endl << "Result1: " << result << endl;
 
     // Q2:
+    int result2 = 0;
     getInput(map, flashed, "data_day11.txt");
     for (int i = 0; i < 1000; i++) {
         incMap(map, flashed);
